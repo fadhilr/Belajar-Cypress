@@ -6,9 +6,9 @@ describe('Kumpulan test case', () => {
         // cy.get('[value = "Bike"]').check()
     })
     it('TC-2', () => {
-        cy.visit('https://bukalapak.com')
-        cy.contains('Daftar').click()
+        cy.login()
         cy.get('.bl-text-field__input').type('Fadhil').should('have.value', 'Fadhil')
+        cy.go('back')
     })
     Cypress.on('uncaught:exception', (err, runnable)=>{
         return false
