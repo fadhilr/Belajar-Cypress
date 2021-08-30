@@ -30,7 +30,7 @@ Cypress.Commands.add('bukaURL', () => {
 Cypress.Commands.add('login', () => {
     cy.get('#login2').click()
     cy.wait(2000)
-    cy.get('#loginusername').type('dojo-Fadhil')
+    cy.get('#loginusername').type('dojo-Fadhil2')
     cy.get('#loginpassword').type('1234')
     cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click()
 })

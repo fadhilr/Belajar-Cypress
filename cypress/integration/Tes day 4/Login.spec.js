@@ -5,6 +5,7 @@ describe('Case Login', () => {
     
     it('TC-1', () => {
         cy.login()
+        
     })
     Cypress.on('uncaught:exception', (err, runnable)=>{
         return false
