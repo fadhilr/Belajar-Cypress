@@ -1,1 +1,4 @@
-{}
+{
+    "baseUrl" : "https://admin.pkh.dojobox.id/",
+    "defaultCommandTimeout" : 10000
+}
