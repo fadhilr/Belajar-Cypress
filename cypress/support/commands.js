@@ -29,10 +29,20 @@ Cypress.Commands.add('bukaURL', () => {
     cy.visit('https://www.demoblaze.com/index.html')
 })
 
+Cypress.Commands.add('bukaURLAdminPKH', () => {
+    cy.visit('https://admin.pkh.dojobox.id/')
+})
+
 Cypress.Commands.add('login', () => {
     cy.get('#login2').click()
     cy.wait(2000)
     cy.get('#loginusername').type('dojo-Fadhil2')
     cy.get('#loginpassword').type('1234')
     cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click()
+})
+
+Cypress.Commands.add('loginAdminPKH', () => {
+    cy.get('#input-email').type('e@dojobox.id').should('have.value', 'e@dojobox.id')
+    cy.get('#input-password').type('admin').should('have.value', 'admin')
+    cy.get('#btn-login').click()
 })
